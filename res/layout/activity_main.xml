@@ -1,0 +1,201 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/simple" >
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <ImageButton
+        	android:layout_width="40sp"
+        	android:layout_height="40sp"
+        	android:src="@drawable/exchange"
+        	android:id="@+id/change"/>
+        <Button 
+            android:layout_width="wrap_content"
+        	android:layout_height="40sp"
+        	android:text="说明"
+        	android:layout_alignParentRight="true"
+        	android:id="@+id/plain"/>
+    </RelativeLayout>
+    
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="简单计算器"
+        android:textSize="25sp"
+        android:layout_gravity="center" />
+    <EditText 
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:text=""
+        android:textSize="30sp"
+        android:editable="false"
+        android:gravity="right"
+        android:background="@drawable/inputbg"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp"
+        android:id="@+id/show"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        
+        <Button 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="AC"
+        	android:textColor="#4169E1"
+        	android:id="@+id/clean"/>
+        <Button 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="CE"
+        	android:textColor="#4169E1"
+        	android:id="@+id/delete"/>
+        <Button 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="←"
+        	android:textColor="#4169E1"
+        	android:id="@+id/backspace"/>
+        <Button 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="/"
+        	android:textColor="#4169E1"
+        	android:id="@+id/div"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        
+        <Button 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="7"
+        	android:id="@+id/btn_7"/>
+        <Button 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="8"
+        	android:id="@+id/btn_8"/>
+        <Button 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="9"
+        	android:id="@+id/btn_9"/>
+        <Button 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="*"
+        	android:textColor="#4169E1"
+        	android:id="@+id/mult"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        
+        <Button 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="4"
+        	android:id="@+id/btn_4"/>
+        <Button 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="5"
+        	android:id="@+id/btn_5"/>
+        <Button 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="6"
+        	android:id="@+id/btn_6"/>
+        <Button 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="-"
+        	android:textColor="#4169E1"
+        	android:id="@+id/sub"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        
+        <Button 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="1"
+        	android:id="@+id/btn_1"/>
+        <Button 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="2"
+        	android:id="@+id/btn_2"/>
+        <Button 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="3"
+        	android:id="@+id/btn_3"/>
+        <Button 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="+"
+        	android:textColor="#4169E1"
+        	android:id="@+id/add"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        
+        <Button 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="%"
+        	android:textColor="#4169E1"
+        	android:id="@+id/percent"/>
+        <Button 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="0"
+        	android:id="@+id/btn_0"/>
+        <Button 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="."
+        	android:id="@+id/btn"/>
+        <Button 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="="
+        	android:textColor="#4169E1"
+        	android:id="@+id/result"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#FFFFE0" >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="说明"
+        android:textSize="30sp" />
+    <ScrollView 
+        android:layout_width="wrap_content"
+        android:layout_height="360sp">
+        <LinearLayout 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical">
+            <TextView 
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_margin="10sp"
+        		android:text="\t本程序设计了两个页面“简单计算器”和“程序员计算器”，实现简单计算器可以进行简单的加、减、乘、除运算，程序员计算器进行不同进制之间的数据转换。\n以下进行界面功能说明："
+        		android:textSize="20sp"/>
+            <ImageView 
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:src="@drawable/exchange"/>
+            <TextView 
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_margin="10sp"
+        		android:text="\t↑点击此按钮可来回切换两个功能计算器界面。"
+        		android:textSize="20sp"/>
+            <TextView 
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_margin="10sp"
+        		android:text="功能介绍"
+        		android:textSize="30sp"/>
+            <TextView 
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_margin="10sp"
+        		android:text="\t简单计算器：\n通过点击界面按键进行简单计算，页面设置了不能通过键盘输入，简单计算器目前只能进行两个数的计算，如果进行三个及三个以上的计算，则无法保证计算结果。\nAC键：输入框清空\nCE键：清除输入键\n←：退格键"
+        		android:textSize="20sp"/>
+            <TextView 
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_margin="10sp"
+        		android:text="\t程序员计算器：\n通过点击界面按键在输入框输入数字，下拉列表选择输入数字的进制进行进制转换，页面设置了不能通过键盘输入，下拉列表如果选择了不同的进制，所对应不能输入的按键不可见。\n←：退格键\nEnter：确认输入键"
+        		android:textSize="20sp"/>
+        </LinearLayout>
+        
+    </ScrollView>
+    
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:id="@+id/back"/>
+    
+
+</LinearLayout>

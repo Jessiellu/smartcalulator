@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">智能计算器</string>
+    <string name="action_settings">Settings</string>
+    <string name="senior">程序员计算器</string>
+    <string name="explain">说明</string>
+
+</resources>
