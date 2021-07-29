@@ -1,8 +1,8 @@
 # Smart Calulator
-> This project is about the development of a smart calculator.
-> Development Tool: Eclipse
-> Language: Java
-> Created by Jessiellu.
+> This project is about the development of a smart calculator.<br />
+> Development Tool: Eclipse <br />
+> Language: Java <br />
+> Created by Jessiellu. <br />
 
 ## Function
 ### simple calulator
